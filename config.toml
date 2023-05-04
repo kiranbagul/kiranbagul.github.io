@@ -48,10 +48,6 @@ theme = "gokarna"
     weight = 1
 
 
-    
-
-
-
 [params]
   # URL for the avatar on homepage
   avatarURL = "/images/photo.png"
@@ -77,7 +73,7 @@ theme = "gokarna"
   customHeadHTML = ""
 
   # Keywords relevant for SEO
-  metaKeywords = ["blog", "gokarna", "hugo"]
+  metaKeywords = ["Kiran Bagul", "India", "Architecture", "Engineering", "Management", "craftsperson"]
 
   # If you want to display posts on the homepage, the options are
   # "popular" (order posts by weight), "recent" (order posts by date)
