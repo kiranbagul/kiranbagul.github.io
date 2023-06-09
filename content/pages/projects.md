@@ -4,6 +4,13 @@ type: page
 ---
 
 
+## Skymapper
+
+[Try it](https://www.kiranbagul.com/skymapper)
+
+Browser based 3D, spatial aware online planetarium. Best viewed on Mobile device to locate the objects as per device orientation. 
+
+
 ## SkyWiki
 
 [Download on Play store](https://play.google.com/store/apps/details?id=com.bluestreaklabs.skywiki&hl=en&gl=US)
