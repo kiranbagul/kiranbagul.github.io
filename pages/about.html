@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0f172a">
+    <title>About Kiran Bagul | Engineering Leader & Enterprise Architect</title>
+    <meta name="description" content="Engineering leader with 18+ years experience. Led 70+ engineers at Entain, 40+ at Bank Jago. Expert in distributed systems, AI/ML, cloud platforms, and digital transformation.">
+    <meta name="keywords" content="Kiran Bagul, Engineering Leadership, Enterprise Architecture, Distributed Systems, AI ML, Cloud Platforms, Digital Transformation">
+    <meta name="author" content="Kiran Bagul">
+    <link rel="canonical" href="https://kiranbagul.com/pages/about.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://kiranbagul.com/pages/about.html">
+    <meta property="og:title" content="About Kiran Bagul | Engineering Leader & Enterprise Architect">
+    <meta property="og:description" content="Engineering leader with 18+ years experience. Led 70+ engineers at Entain, 40+ at Bank Jago.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://kiranbagul.com/pages/about.html">
+    <meta name="twitter:title" content="About Kiran Bagul">
+    <meta name="twitter:description" content="Engineering leader with 18+ years experience in distributed systems and AI/ML.">
+    
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&font-display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+            --primary: #0f172a;
+            --secondary: #1e293b;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --bg-light: #f8fafc;
+            --border: #e5e7eb;
+        }
+
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            background: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        .about-hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 100px 2rem 60px;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.02em;
+        }
+
+        .about-hero p {
+            font-size: 1.05rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .about-content {
+            max-width: 1100px;
+            margin: -30px auto 0;
+            padding: 0 2rem 3rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            margin-bottom: 1.5rem;
+        }
+
+        .card h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            letter-spacing: -0.01em;
+        }
+
+        .card h2::before {
+            content: '';
+            width: 4px;
+            height: 1.75rem;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            border-radius: 2px;
+        }
+
+        .intro-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-primary);
+            margin-bottom: 1.25rem;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .expertise-item {
+            padding: 1.25rem;
+            background: var(--bg-light);
+            border-radius: 12px;
+            border-left: 3px solid #3b82f6;
+            transition: all 0.3s ease;
+        }
+
+        .expertise-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+        }
+
+        .expertise-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.01em;
+        }
+
+        .expertise-item p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .project-card {
+            background: var(--bg-light);
+            border-radius: 12px;
+            padding: 1.75rem;
+            transition: all 0.3s ease;
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+        }
+
+        .project-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin: 0 auto 1rem;
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
+        }
+            font-size: 1.2rem;
+            margin-bottom: 0.85rem;
+        }
+
+        .project-card h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.65rem;
+            letter-spacing: -0.01em;
+        }
+
+        .project-card p {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            gap: 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero {
+                padding: 90px 1.5rem 50px;
+            }
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+            .card {
+                padding: 2rem 1.5rem;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+            color: var(--primary);
+            margin-bottom: 0.4rem;
+        }
+
+        .education-section p {
+            color: var(--text-secondary);
+            line-height: 1.5;
+            font-size: 0.9rem;
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--bg-light);
+            border-radius: 12px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #3b82f6;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+            .about-hero {
+                padding: 100px 1rem 60px;
+            }
+            .card {
+                padding: 2rem 1.5rem;
+            }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <section class="about-hero">
+        <h1>About Me</h1>
+        <p>Engineering leader passionate about building scalable systems and high-performing teams</p>
+    </section>
+
+    <div class="about-content">
+        <div class="card">
+            <h2>Who I Am</h2>
+            <p class="intro-text">
+                I bring strong leadership expertise in building and scaling high-throughput, lean, cross-functional agile teams 
+                in fast-paced environments. With 18+ years of experience, I have a proven track record of collaboratively building, 
+                growing, and optimizing products while fostering self-organizing teams with a strong culture of ownership.
+            </p>
+            <p class="intro-text">
+                At Entain, I played a key role in establishing a new tech center in Pune, working closely with leadership to define 
+                and execute product and technical roadmaps. I lead the Player Experience domain for the US market, managing 70+ 
+                engineers across multiple locations, driving tech modernization and transformation efforts for Sportsbook and 
+                Betting engine product suites.
+            </p>
+            <p class="intro-text">
+                Previously, at Bank Jago (Dkatalis Labs), I led the ground-up development of core banking and bill payment systems, 
+                scaling the engineering team to 40 members while championing engineering best practices. I've also worked with various 
+                product organizations as a consultant, building scalable and user-centric products.
+            </p>
+            <p class="intro-text">
+                I'm passionate about distributed systems, platform engineering, agile transformations, and cloud infrastructure. 
+                I thrive on solving complex engineering challenges and fostering a culture of ownership and excellence.
+            </p>
+            <p class="intro-text">
+                Beyond work, I enjoy poetry, trekking, and science outreach activities. I have a keen interest in astronomy and 
+                geology, and built SkyWiki—an Android app for amateur astronomers with 100K+ downloads. I believe in sharing knowledge 
+                and contributing to the community through tools and apps that have reached hundreds of thousands of users worldwide.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Areas of Expertise</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                <div>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <div style="display: flex; align-items: start; gap: 0.75rem;">
+                            <span style="color: #3b82f6; font-size: 1.2rem; margin-top: 0.1rem;">•</span>
+                            <div>
+                                <strong style="color: var(--primary); font-size: 0.95rem;">Leadership & Team Building</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0.25rem 0 0 0; line-height: 1.5;">Building and scaling tech teams, technical leadership, agile coaching, mentoring, hiring optimization</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 0.75rem;">
+                            <span style="color: #3b82f6; font-size: 1.2rem; margin-top: 0.1rem;">•</span>
+                            <div>
+                                <strong style="color: var(--primary); font-size: 0.95rem;">Engineering Culture</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0.25rem 0 0 0; line-height: 1.5;">Setting up engineering values, discipline, practices, and culture of ownership and excellence</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 0.75rem;">
+                            <span style="color: #3b82f6; font-size: 1.2rem; margin-top: 0.1rem;">•</span>
+                            <div>
+                                <strong style="color: var(--primary); font-size: 0.95rem;">Distributed Systems</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0.25rem 0 0 0; line-height: 1.5;">Highly scalable, available architectures, microservices, event-driven systems, cloud-native platforms</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 0.75rem;">
+                            <span style="color: #3b82f6; font-size: 1.2rem; margin-top: 0.1rem;">•</span>
+                            <div>
+                                <strong style="color: var(--primary); font-size: 0.95rem;">Platform Engineering</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0.25rem 0 0 0; line-height: 1.5;">Product development, agile transformations, DevOps, CI/CD, infrastructure as code</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <div style="display: flex; align-items: start; gap: 0.75rem;">
+                            <span style="color: #3b82f6; font-size: 1.2rem; margin-top: 0.1rem;">•</span>
+                            <div>
+                                <strong style="color: var(--primary); font-size: 0.95rem;">Cloud & Infrastructure</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0.25rem 0 0 0; line-height: 1.5;">AWS, GCP, Azure, Kubernetes, on-premise solutions, infrastructure automation</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 0.75rem;">
+                            <span style="color: #3b82f6; font-size: 1.2rem; margin-top: 0.1rem;">•</span>
+                            <div>
+                                <strong style="color: var(--primary); font-size: 0.95rem;">Technology Stack</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0.25rem 0 0 0; line-height: 1.5;">JVM, JavaScript, Mobile stack, SQL/NoSQL, caching, distributed systems</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 0.75rem;">
+                            <span style="color: #3b82f6; font-size: 1.2rem; margin-top: 0.1rem;">•</span>
+                            <div>
+                                <strong style="color: var(--primary); font-size: 0.95rem;">Software Craftsmanship</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0.25rem 0 0 0; line-height: 1.5;">Clean code, clean design, TDD, engineering best practices, code quality</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: start; gap: 0.75rem;">
+                            <span style="color: #3b82f6; font-size: 1.2rem; margin-top: 0.1rem;">•</span>
+                            <div>
+                                <strong style="color: var(--primary); font-size: 0.95rem;">Digital Transformation</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0.25rem 0 0 0; line-height: 1.5;">Agile transformation, legacy modernization, organizational change management</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Hobby Projects</h2>
+            <p class="intro-text">
+                Beyond professional work, I'm passionate about astronomy and science. Here are some weekend projects I've built:
+            </p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3>SkyWiki</h3>
+                    <p>Android app for amateur astronomers with 100K+ downloads. Editor's choice app among top 10 best astronomy apps. Features skymap, events calendar, rise/set information, astronomy news, and image of the day.</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.bluestreaklabs.skywiki" class="project-link">
+                        Download on Play Store →
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon" style="background: linear-gradient(135deg, #10b981, #059669);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </div>
+                    <h3>Skymapper</h3>
+                    <p>Browser-based 3D, spatial-aware online planetarium. Best viewed on mobile devices to locate celestial objects based on device orientation. Interactive and immersive astronomy experience.</p>
+                    <a href="https://www.kiranbagul.com/skymapper" class="project-link">
+                        Try it Live →
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                            <polyline points="21 15 16 10 5 21"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Albatross</h3>
+                    <p>Chrome web extension for new tab with NASA, BING, and NatGeo image feeds. Dazzling backgrounds, quick search for bookmarks & apps, todo list, and weather information.</p>
+                    <a href="https://chrome.google.com/webstore/detail/albatross-flaunt-your-new/ogjlfeipnjlnajllioiajlmheipalhdi" class="project-link">
+                        Get Extension →
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                    </div>
+                    <h3>Skymap</h3>
+                    <p>2D plot of planets in the sky at given location and time. Features time acceleration/deceleration to observe planetary trajectories and movements across the celestial sphere.</p>
+                    <a href="https://www.kiranbagul.com/skymap/" class="project-link">
+                        Try it Live →
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="9" y1="9" x2="15" y2="15"></line>
+                            <line x1="15" y1="9" x2="9" y2="15"></line>
+                        </svg>
+                    </div>
+                    <h3>Minesweeper</h3>
+                    <p>Classic implementation of the single-player puzzle game. Clear the board without detonating mines using clues about neighboring mine counts.</p>
+                    <a href="https://www.kiranbagul.com/minesweeper/" class="project-link">
+                        Play Game →
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon" style="background: linear-gradient(135deg, #06b6d4, #0891b2);">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3>Expression Plotter</h3>
+                    <p>Interactive JavaScript app to plot mathematical expressions for any number of variables. Visualize complex mathematical functions in real-time.</p>
+                    <a href="https://www.kiranbagul.com/visualize/" class="project-link">
+                        Try it Live →
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Education & Publications</h2>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <div style="display: flex; align-items: start; gap: 0.75rem;">
+                    <span style="color: #3b82f6; font-size: 1.2rem; margin-top: 0.1rem;">•</span>
+                    <div>
+                        <strong style="color: var(--primary); font-size: 0.95rem;">Bachelor of Engineering - Electrical</strong>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0.25rem 0 0 0;">K K Wagh Institute of Engineering Education and Research, Nashik</p>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: start; gap: 0.75rem;">
+                    <span style="color: #3b82f6; font-size: 1.2rem; margin-top: 0.1rem;">•</span>
+                    <div>
+                        <strong style="color: var(--primary); font-size: 0.95rem;">K-Map Simplification Using C</strong>
+                        <p style="color: var(--text-secondary); font-size: 0.85rem; margin: 0.25rem 0 0 0;">Published in "Electronics For You" magazine, November 2006</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="/js/feather-icons.min.js"></script>
+    <script src="/js/svg-injector.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+        fetch('/partials/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+                if (typeof feather !== 'undefined') feather.replace();
+            });
+        
+        fetch('/partials/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+</html>

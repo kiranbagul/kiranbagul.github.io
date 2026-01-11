@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0f172a">
+  <title>Consulting Services | Kiran Bagul - Enterprise Architecture & Digital Transformation</title>
+  <meta name="description" content="Strategic technology consulting for enterprise digital transformation. 18+ years experience in cloud platforms, AI/ML, microservices, and scaling engineering teams. 50+ successful projects delivered.">
+  <meta name="keywords" content="Technology Consulting, Digital Transformation, Enterprise Architecture, Cloud Migration, AI ML Consulting, Microservices, DevOps, Engineering Leadership">
+  <meta name="author" content="Kiran Bagul">
+  <link rel="canonical" href="https://kiranbagul.com/pages/consulting-services.html">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kiranbagul.com/pages/consulting-services.html">
+  <meta property="og:title" content="Consulting Services | Kiran Bagul - Enterprise Digital Transformation">
+  <meta property="og:description" content="Strategic technology consulting for enterprise digital transformation. 18+ years experience, 50+ successful projects.">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://kiranbagul.com/pages/consulting-services.html">
+  <meta name="twitter:title" content="Consulting Services | Kiran Bagul">
+  <meta name="twitter:description" content="Strategic technology consulting for enterprise digital transformation.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap&font-display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0f172a;
+      --secondary-color: #1e293b;
+      --accent-color: #3b82f6;
+      --accent-hover: #2563eb;
+      --text-primary: rgba(255, 255, 255, 0.95);
+      --text-secondary: rgba(255, 255, 255, 0.7);
+      --bg-primary: #0f172a;
+      --bg-secondary: #1e293b;
+      --bg-tertiary: #334155;
+      --border-color: rgba(255, 255, 255, 0.1);
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --card-border: rgba(255, 255, 255, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      color: var(--text-primary);
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      overflow-x: hidden;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-secondary);
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: white;
+      padding: 140px 2rem 100px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+      opacity: 0.3;
+    }
+
+    .hero-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      font-weight: 300;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+      margin-top: 4rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: var(--accent-color);
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-top: 0.5rem;
+    }
+
+    /* Section Styles */
+    .section {
+      padding: 100px 2rem;
+      background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    }
+
+    .section-alt {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .section-subtitle {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .service-card {
+      background: var(--card-bg);
+      padding: 2.5rem;
+      border-radius: 16px;
+      transition: all 0.3s ease;
+      border: 1px solid var(--card-border);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-color), #8b5cf6);
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(59, 130, 246, 0.3);
+    }
+
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--accent-color), #8b5cf6);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .service-title {
+      font-size: clamp(1.15rem, 2vw, 1.4rem);
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .service-description {
+      color: var(--text-secondary);
+      line-height: 1.7;
+      font-size: clamp(0.9rem, 1.5vw, 1rem);
+    }
+
+    /* Tech Stack */
+    .tech-stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 3rem;
+      margin-top: 4rem;
+    }
+
+    .tech-category {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 16px;
+      border: 1px solid var(--card-border);
+    }
+
+    .tech-category h3 {
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .tech-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .tech-item {
+      background: rgba(59, 130, 246, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.85);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      font-weight: 500;
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      transition: all 0.3s ease;
+    }
+
+    .tech-item:hover {
+      background: var(--accent-color);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* Process Timeline */
+    .process-timeline {
+      position: relative;
+      margin-top: 4rem;
+    }
+
+    .timeline-item {
+      display: flex;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+
+    .timeline-number {
+      width: 60px;
+      height: 60px;
+      background: var(--accent-color);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-right: 2rem;
+      flex-shrink: 0;
+    }
+
+    .timeline-content {
+      flex: 1;
+      padding-top: 0.5rem;
+    }
+
+    .timeline-title {
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .timeline-description {
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: white;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23dots)"/></svg>');
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .cta-subtitle {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      opacity: 0.9;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--accent-color);
+      color: white;
+      border-color: var(--accent-color);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      border-color: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: white;
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: white;
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 2rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-container {
+        padding: 0 1rem;
+      }
+      
+      .logo {
+        font-size: 1.2rem;
+      }
+      
+      .nav-links {
+        display: none;
+      }
+      
+      .hero {
+        padding: 100px 1rem 60px;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      
+      .stat {
+        text-align: center;
+      }
+      
+      .section {
+        padding: 60px 1rem;
+      }
+      
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      
+      .service-card {
+        padding: 2rem;
+      }
+      
+      .tech-stack {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      
+      .timeline-item {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .timeline-number {
+        margin: 0 auto 1rem;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        justify-items: center;
+      }
+      
+      .stat {
+        width: 100%;
+        max-width: 300px;
+      }
+      
+      .stat-number {
+        font-size: 2rem;
+      }
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    /* Scroll animations */
+    .scroll-reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease;
+    }
+
+    .scroll-reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="logo">Kiran Bagul Consulting</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#tech-stack">Technology</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="fade-in-up">Transforming Vision Into Measurable Business Impact</h1>
+      <p class="hero-subtitle fade-in-up">
+        Strategic technology consulting that delivers real outcomes: faster time-to-market, 
+        reduced operational costs, and scalable platforms that grow with your business.
+      </p>
+      
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">18+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">Successful Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">10M+</span>
+          <span class="stat-label">Users Served</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <h2 class="section-title">Complete Product Development Lifecycle</h2>
+        <p class="section-subtitle">
+          End-to-end product delivery with dedicated teams across Product, Development, QA, and Data & Analytics. 
+          From concept to production, we handle everything.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card scroll-reveal">
+          <div class="service-icon" style="background: linear-gradient(135deg, #1e40af, #3b82f6); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+          </div>
+          <h3 class="service-title">Enterprise Architecture</h3>
+          <p class="service-description">
+            Design scalable, resilient systems that support millions of users. Microservices, 
+            event-driven architectures, and cloud-native platforms built for growth.
+          </p>
+        </div>
+
+        <div class="service-card scroll-reveal">
+          <div class="service-icon" style="background: linear-gradient(135deg, #1e40af, #3b82f6); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+          </div>
+          <h3 class="service-title">Digital Transformation</h3>
+          <p class="service-description">
+            Modernize legacy systems, automate manual processes, and accelerate your digital journey. 
+            From strategy to execution with measurable business impact.
+          </p>
+        </div>
+
+        <div class="service-card scroll-reveal">
+          <div class="service-icon" style="background: linear-gradient(135deg, #1e40af, #3b82f6); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="3"></circle>
+              <line x1="12" y1="2" x2="12" y2="9"></line>
+              <line x1="12" y1="15" x2="12" y2="22"></line>
+              <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+              <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+            </svg>
+          </div>
+          <h3 class="service-title">AI & Machine Learning</h3>
+          <p class="service-description">
+            Practical AI that drives business value. Predictive analytics, intelligent automation, 
+            and ML-powered decision systems that deliver ROI.
+          </p>
+        </div>
+
+        <div class="service-card scroll-reveal">
+          <div class="service-icon" style="background: linear-gradient(135deg, #1e40af, #3b82f6); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Industry 4.0 & IoT</h3>
+          <p class="service-description">
+            Smart factory solutions, real-time monitoring, and predictive maintenance. 
+            Connect machines, optimize operations, and unlock data-driven insights.
+          </p>
+        </div>
+
+        <div class="service-card scroll-reveal">
+          <div class="service-icon" style="background: linear-gradient(135deg, #1e40af, #3b82f6); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Cloud & Platform Engineering</h3>
+          <p class="service-description">
+            Cloud-native architectures, Kubernetes orchestration, and infrastructure automation. 
+            Build platforms that scale effortlessly and cost-effectively.
+          </p>
+        </div>
+
+        <div class="service-card scroll-reveal">
+          <div class="service-icon" style="background: linear-gradient(135deg, #1e40af, #3b82f6); width: 60px; height: 60px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="1" x2="12" y2="23"></line>
+              <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Data & Analytics Platforms</h3>
+          <p class="service-description">
+            Real-time data pipelines, analytics platforms, and business intelligence systems. 
+            Turn data into actionable insights that drive decisions.
+          </p>
+        </div>
+      </div>
+
+      <div style="background: rgba(255, 255, 255, 0.03); padding: clamp(2rem, 5vw, 3.5rem); border-radius: 16px; margin-top: 4rem; border: 1px solid rgba(255, 255, 255, 0.1);">
+        <h3 style="font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 700; color: white; margin-bottom: 1rem; text-align: center;">Full-Stack Team Capabilities</h3>
+        <p style="text-align: center; color: var(--text-secondary); font-size: clamp(0.95rem, 2vw, 1.05rem); margin-bottom: 3rem; max-width: 700px; margin-left: auto; margin-right: auto;">End-to-end product delivery with dedicated experts across every discipline</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+          <div style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.05), rgba(59, 130, 246, 0.02)); padding: 2rem; border-radius: 12px; border: 1px solid rgba(30, 64, 175, 0.15); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 16px rgba(30, 64, 175, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h4 style="font-size: 1.15rem; font-weight: 600; color: white; margin-bottom: 0.5rem;">Product Management</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">Strategy, roadmaps, and user-centric design</p>
+          </div>
+          
+          <div style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.05), rgba(59, 130, 246, 0.02)); padding: 2rem; border-radius: 12px; border: 1px solid rgba(30, 64, 175, 0.15); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 16px rgba(30, 64, 175, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h4 style="font-size: 1.15rem; font-weight: 600; color: white; margin-bottom: 0.5rem;">Development Teams</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">Full-stack engineers across all technologies</p>
+          </div>
+          
+          <div style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.05), rgba(59, 130, 246, 0.02)); padding: 2rem; border-radius: 12px; border: 1px solid rgba(30, 64, 175, 0.15); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 16px rgba(30, 64, 175, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div>
+            <h4 style="font-size: 1.15rem; font-weight: 600; color: white; margin-bottom: 0.5rem;">Quality Assurance</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">Automated testing and quality engineering</p>
+          </div>
+          
+          <div style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.05), rgba(59, 130, 246, 0.02)); padding: 2rem; border-radius: 12px; border: 1px solid rgba(30, 64, 175, 0.15); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 16px rgba(30, 64, 175, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h4 style="font-size: 1.15rem; font-weight: 600; color: white; margin-bottom: 0.5rem;">Data & Analytics</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">Data engineering and business intelligence</p>
+          </div>
+          
+          <div style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.05), rgba(59, 130, 246, 0.02)); padding: 2rem; border-radius: 12px; border: 1px solid rgba(30, 64, 175, 0.15); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 16px rgba(30, 64, 175, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h4 style="font-size: 1.15rem; font-weight: 600; color: white; margin-bottom: 0.5rem;">Automation & DevOps</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">CI/CD, infrastructure automation, monitoring</p>
+          </div>
+          
+          <div style="background: linear-gradient(135deg, rgba(30, 64, 175, 0.05), rgba(59, 130, 246, 0.02)); padding: 2rem; border-radius: 12px; border: 1px solid rgba(30, 64, 175, 0.15); transition: all 0.3s ease; text-align: center;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 8px 16px rgba(30, 64, 175, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+              </svg>
+            </div>
+            <h4 style="font-size: 1.15rem; font-weight: 600; color: white; margin-bottom: 0.5rem;">Cloud & Infrastructure</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.6;">AWS, Azure, GCP, Kubernetes, Terraform</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience That Scales Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <h2 class="section-title">Experience That Scales</h2>
+        <p class="section-subtitle">
+          18+ years architecting and delivering enterprise-scale systems. From startups to Fortune 500s.
+        </p>
+      </div>
+
+      <div style="max-width: 900px; margin: 0 auto;">
+        <div style="display: grid; gap: 2rem; margin-top: 3rem;">
+          <div class="scroll-reveal" style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); display: flex; gap: 1.5rem; align-items: start;">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+            </div>
+            <div>
+              <h4 style="font-size: 1.2rem; font-weight: 600; color: white; margin-bottom: 0.5rem;">Strategic & Hands-On</h4>
+              <p style="color: var(--text-secondary); line-height: 1.7;">Comfortable in C-suite discussions and code reviews. I bridge strategy and execution, ensuring technical decisions align with business goals.</p>
+            </div>
+          </div>
+
+          <div class="scroll-reveal" style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); display: flex; gap: 1.5rem; align-items: start;">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </div>
+            <div>
+              <h4 style="font-size: 1.2rem; font-weight: 600; color: white; margin-bottom: 0.5rem;">Enterprise-Scale Architecture</h4>
+              <p style="color: var(--text-secondary); line-height: 1.7;">Designed platforms serving 10M+ users. Deep expertise in distributed systems, microservices, event-driven architectures, and cloud-native platforms.</p>
+            </div>
+          </div>
+
+          <div class="scroll-reveal" style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); display: flex; gap: 1.5rem; align-items: start;">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 style="font-size: 1.2rem; font-weight: 600; color: white; margin-bottom: 0.5rem;">Engineering Leadership</h4>
+              <p style="color: var(--text-secondary); line-height: 1.7;">Led global engineering teams across product companies and enterprises. Built high-performing teams and established engineering excellence practices.</p>
+            </div>
+          </div>
+
+          <div class="scroll-reveal" style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); display: flex; gap: 1.5rem; align-items: start;">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h4 style="font-size: 1.2rem; font-weight: 600; color: white; margin-bottom: 0.5rem;">Proven Track Record</h4>
+              <p style="color: var(--text-secondary); line-height: 1.7;">50+ successful projects across SaaS, manufacturing, fintech, and e-commerce. Trusted advisor to CTOs and engineering leaders at scale-ups and enterprises.</p>
+            </div>
+          </div>
+
+          <div class="scroll-reveal" style="background: rgba(255, 255, 255, 0.05); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); display: flex; gap: 1.5rem; align-items: start;">
+            <div style="width: 56px; height: 56px; background: linear-gradient(135deg, #1e40af, #3b82f6); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h4 style="font-size: 1.2rem; font-weight: 600; color: white; margin-bottom: 0.5rem;">Full-Stack Technology Expertise</h4>
+              <p style="color: var(--text-secondary); line-height: 1.7;">Deep knowledge across backend, cloud, data, AI/ML, and DevOps. I speak the language of modern engineering and know what works at scale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section id="process" class="section">
+    <div class="container">
+      <div class="section-header scroll-reveal">
+        <h2 class="section-title">Our Proven Process</h2>
+        <p class="section-subtitle">
+          A structured approach that ensures successful delivery from strategy to implementation.
+        </p>
+      </div>
+
+      <div class="process-timeline">
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-number">1</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Discovery & Strategy</h3>
+            <p class="timeline-description">
+              Deep dive into your business objectives, current technology landscape, and challenges. 
+              Define clear goals, success metrics, and create a comprehensive technology roadmap 
+              aligned with your business strategy.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-number">2</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Architecture & Design</h3>
+            <p class="timeline-description">
+              Design scalable, secure, and maintainable solutions. Create detailed technical 
+              specifications, system architecture diagrams, and implementation plans with 
+              clear milestones and deliverables.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-number">3</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Agile Implementation</h3>
+            <p class="timeline-description">
+              Iterative development with continuous feedback loops. Regular demos, sprint reviews, 
+              and stakeholder engagement ensure we're building exactly what you need while 
+              maintaining flexibility for changing requirements.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-number">4</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Testing & Quality Assurance</h3>
+            <p class="timeline-description">
+              Comprehensive testing strategy including unit tests, integration tests, performance 
+              testing, and security audits. Automated testing pipelines ensure consistent quality 
+              and rapid deployment capabilities.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-number">5</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Deployment & Optimization</h3>
+            <p class="timeline-description">
+              Smooth production deployment with zero-downtime strategies. Performance monitoring, 
+              optimization, and continuous improvement based on real-world usage patterns and 
+              business metrics.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item scroll-reveal">
+          <div class="timeline-number">6</div>
+          <div class="timeline-content">
+            <h3 class="timeline-title">Knowledge Transfer & Support</h3>
+            <p class="timeline-description">
+              Comprehensive documentation, team training, and knowledge transfer sessions. 
+              Ongoing support options and maintenance plans to ensure long-term success and 
+              your team's ability to maintain and extend the solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="contact" class="section cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <div style="display: inline-block; background: rgba(255, 255, 255, 0.15); padding: 0.5rem 1.25rem; border-radius: 20px; margin-bottom: 1.5rem; font-size: 0.9rem; font-weight: 500;">
+          ✨ Now Accepting Select Consulting Engagements
+        </div>
+        <h2 class="cta-title">Let's Build Something Exceptional Together</h2>
+        <p class="cta-subtitle">
+          Whether you're modernizing legacy systems, scaling to millions of users, or building 
+          the next generation of your platform—I bring the expertise to make it happen.
+        </p>
+        <div style="background: rgba(255, 255, 255, 0.1); padding: 2rem; border-radius: 12px; margin: 2rem auto; max-width: 700px; border: 1px solid rgba(255, 255, 255, 0.2);">
+          <h3 style="font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">What to Expect:</h3>
+          <div style="display: grid; gap: 0.75rem; text-align: left;">
+            <div style="display: flex; align-items: start; gap: 0.75rem;">
+              <span style="color: #10b981; font-size: 1.2rem;">✓</span>
+              <span style="opacity: 0.95;">Initial consultation to understand your challenges and goals</span>
+            </div>
+            <div style="display: flex; align-items: start; gap: 0.75rem;">
+              <span style="color: #10b981; font-size: 1.2rem;">✓</span>
+              <span style="opacity: 0.95;">Detailed assessment and strategic roadmap within 2 weeks</span>
+            </div>
+            <div style="display: flex; align-items: start; gap: 0.75rem;">
+              <span style="color: #10b981; font-size: 1.2rem;">✓</span>
+              <span style="opacity: 0.95;">Flexible engagement models: advisory, hands-on, or hybrid</span>
+            </div>
+            <div style="display: flex; align-items: start; gap: 0.75rem;">
+              <span style="color: #10b981; font-size: 1.2rem;">✓</span>
+              <span style="opacity: 0.95;">Clear milestones, deliverables, and success metrics from day one</span>
+            </div>
+          </div>
+        </div>
+        <div class="cta-buttons">
+          <a href="mailto:contact@kiranbagul.com" class="btn btn-primary">Schedule a Consultation</a>
+          <a href="https://www.linkedin.com/in/kiranbagul/" class="btn btn-secondary">Connect on LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="mailto:contact@kiranbagul.com">Email</a>
+        <a href="https://www.linkedin.com/in/kiranbagul/">LinkedIn</a>
+        <a href="https://github.com/kiranbagul">GitHub</a>
+        <a href="http://www.kiranbagul.com/">Portfolio</a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Kiran Bagul Consulting. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Scroll reveal animation
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.scroll-reveal').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Navigation background on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 50) {
+        nav.style.background = 'rgba(15, 23, 42, 0.98)';
+        nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
+      } else {
+        nav.style.background = 'rgba(15, 23, 42, 0.95)';
+        nav.style.boxShadow = 'none';
+      }
+    });
+  </script>
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Kiran Bagul Consulting",
+    "description": "Strategic technology consulting for enterprise digital transformation",
+    "url": "https://kiranbagul.com/pages/consulting-services.html",
+    "provider": {
+      "@type": "Person",
+      "name": "Kiran Bagul",
+      "jobTitle": "Enterprise Architect & Technology Consultant"
+    },
+    "areaServed": "Global",
+    "serviceType": [
+      "Digital Transformation",
+      "Enterprise Architecture",
+      "Cloud Migration",
+      "AI and Machine Learning",
+      "Microservices Architecture",
+      "Engineering Leadership"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "50"
+    }
+  }
+  </script>
+
+</body>
+</html>

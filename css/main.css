@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  margin-bottom: 170px;
+  margin-bottom: 0;
 }
 
 b,
@@ -244,13 +244,13 @@ a:hover .feather-sun {
 }
 
 /* FOOTER */
-.footer {
+.footer, footer {
   bottom: 0;
   color: inherit;
   left: 0;
   overflow: hidden;
-  padding: 40px 0;
-  position: absolute;
+  padding: 2rem 0;
+  position: relative;
   text-align: center;
   width: 100%;
 }
