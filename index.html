@@ -19,7 +19,7 @@
     <meta name="twitter:title" content="Kiran Bagul — Technology Leader · AI-Native Delivery">
     <meta name="twitter:description" content="Head of Engineering at Entain. AI-native delivery, platform &amp; architecture at scale.">
 
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/main.css?v=3">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -279,8 +279,8 @@
 
     <script>
         Promise.all([
-            fetch('/partials/header.html').then(r => r.text()),
-            fetch('/partials/footer.html').then(r => r.text())
+            fetch('/partials/header.html?v=3').then(r => r.text()),
+            fetch('/partials/footer.html?v=3').then(r => r.text())
         ]).then(([header, footer]) => {
             document.getElementById('header').innerHTML = header;
             document.getElementById('footer').innerHTML = footer;
@@ -296,7 +296,7 @@
             if (window.initSite) window.initSite();
         });
     </script>
-    <script src="/js/main.js" defer></script>
+    <script src="/js/main.js?v=3" defer></script>
 
     <script type="application/ld+json">
     {
