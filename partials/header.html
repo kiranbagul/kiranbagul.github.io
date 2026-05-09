@@ -1,38 +1,21 @@
-<header class="header">
-    <nav class="header-nav">
-        <div class="avatar">
-            <a href="/">
-                <img src="/images/photo.png" alt="avatar" />
+<header class="site-header" id="siteHeader">
+    <div class="container">
+        <nav class="nav" aria-label="Primary">
+            <a class="brand" href="/">
+                <img src="/images/photo.png" alt="" class="brand-mark" />
+                <span class="brand-name">Kiran Bagul<span class="dot" aria-hidden="true"></span></span>
             </a>
-        </div>
 
-        <div class="nav-title">
-            <a class="nav-brand" href="/">Kiran Bagul</a>
-        </div>
-
-        <div class="nav-links">
-            <div class="nav-link">
-                <a href="/pages/consulting-services.html">Consulting</a>
-            </div>
-            <div class="nav-link">
-                <a href="/pages/about.html">About me</a>
+            <div class="nav-links" id="navLinks">
+                <a class="nav-link" href="/" data-nav="home">Home</a>
+                <a class="nav-link" href="/pages/consulting-services.html" data-nav="consulting">Consulting</a>
+                <a class="nav-link" href="/pages/about.html" data-nav="about">About</a>
+                <a class="nav-cta" href="mailto:contact@kiranbagul.com">Get in touch</a>
             </div>
 
-            <div class="nav-link" id="hamburger-menu-toggle">
-                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
-                <a>
-                    <span data-feather="menu"></span>
-                </a>
-            </div>
-
-            <ul class="nav-hamburger-list visibility-hidden">
-                <li class="nav-item">
-                    <a href="/pages/consulting-services.html">Consulting</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/pages/about.html">About me</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+            </button>
+        </nav>
+    </div>
 </header>
