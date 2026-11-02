@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://kiranbagul.com/sitemap.xml
+Sitemap: https://www.kiranbagul.com/sitemap.xml

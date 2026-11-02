@@ -1,60 +1,32 @@
-# Kiran Bagul - Portfolio Website
+# Kiran Bagul — personal portfolio
 
-Static HTML/CSS/JS portfolio website showcasing consulting services and professional experience.
+A static, responsive portfolio for engineering leadership and independent products. Hosted on GitHub Pages at https://www.kiranbagul.com.
 
-## Structure
+## Pages
 
-```
-├── index.html                    # Homepage
-├── pages/
-│   ├── consulting-services.html # Consulting services page
-│   └── about.html               # About page
-├── partials/
-│   ├── header.html              # Shared header navigation
-│   └── footer.html              # Shared footer
-├── css/
-│   ├── main.css                 # Main stylesheet
-│   └── normalize.min.css        # CSS reset
-├── js/
-│   └── main.js                  # JavaScript functionality
-├── images/                      # Images and assets
-├── svg/                         # SVG icons
-├── robots.txt                   # SEO robots file
-└── sitemap.xml                  # SEO sitemap
+- `index.html`: introduction, selected work, products, and engineering approach.
+- `pages/about.html`: background, experience, community, and education.
+- `pages/consulting-services.html`: secondary advisory page, linked from the footer.
+- `css/main.css`: shared responsive styles.
+- `partials/`: shared header and footer sources.
+- `js/main.js`: optional copyright-year update. Content and navigation work without JavaScript.
 
+## Local preview
+
+```sh
+python3 -m http.server 8000
 ```
 
-## Features
+Open http://localhost:8000. No installation or build is required.
 
-- **Dark Theme**: Professional dark gradient design
-- **Responsive Design**: Mobile-first, works on all devices
-- **SEO Optimized**: Meta tags, structured data, sitemap
-- **Performance**: Optimized fonts, deferred scripts, minimal dependencies
-- **Consulting Services**: Full consulting portfolio with service details
-- **About Page**: Professional experience and expertise
+Header and footer markup is included directly in each page. After editing either partial, update the pages with:
 
-## Local Development
-
-Open `index.html` in a browser or use a local server:
-
-```bash
-# Python 3
-python -m http.server 8000
-
-# Node.js
-npx serve
+```sh
+python3 scripts/sync-partials.py
 ```
 
-Then visit `http://localhost:8000`
+Page-specific content is edited directly in the HTML files. Social previews use the existing portrait. Canonical URLs and the sitemap use the `www` hostname configured in `CNAME`.
 
 ## Deployment
 
-The site automatically deploys to GitHub Pages on push to main branch via GitHub Actions.
-
-## Technologies
-
-- HTML5
-- CSS3 (with CSS Grid and Flexbox)
-- Vanilla JavaScript
-- GitHub Pages for hosting
-
+The existing GitHub Pages workflow deploys changes pushed to `master`. Local edits do not change the public site until deployed.

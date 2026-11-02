@@ -1,0 +1,3 @@
+.DS_Store
+output/playwright/
+__pycache__/
